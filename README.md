@@ -1,5 +1,5 @@
 🌐 Live Demo
-👉 Click here to view the app
+👉 Click here to view the app [https://term-deposit-subscription-predictor-bd5s3zcrsapvnvjkgr7bpe.streamlit.app/]
 
 # 🏦 Term Deposit Subscription Prediction Model
 
