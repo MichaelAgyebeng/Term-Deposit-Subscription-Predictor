@@ -3,10 +3,22 @@ import pandas as pd
 import pickle
 
 # Load your trained model
-model = pickle.load(open("model.pkl", "rb"))
+import gdown
+import os
+import pickle
+
+model_path = "model.pkl"
+
+if not os.path.exists(model_path):
+    url = "https://drive.google.com/file/d/15KcxB-ElrzYxcO9Eha2_TWQYFK5YF5l4/view?usp=sharing"
+    gdown.download(url, model_path, quiet=False)
+
+with open(model_path, "rb") as f:
+    model = pickle.load(f)
 
 # Streamlit UI
 st.title("Term Deposit Subscription Predictor")
+
 
 # Inputs
 age = st.slider("Age", 18, 95, 30)
