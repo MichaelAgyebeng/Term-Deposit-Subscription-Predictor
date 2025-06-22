@@ -10,7 +10,7 @@ import pickle
 model_path = "model.pkl"
 
 if not os.path.exists(model_path):
-    url = "https://drive.google.com/file/d/15KcxB-ElrzYxcO9Eha2_TWQYFK5YF5l4/view?usp=sharing"
+    url = "https://drive.google.com/uc?id=1a2b3c4d5e6f7g8h9i"
     gdown.download(url, model_path, quiet=False)
 
 with open(model_path, "rb") as f:
