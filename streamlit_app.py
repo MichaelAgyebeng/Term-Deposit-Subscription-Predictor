@@ -6,7 +6,7 @@ import joblib
 model = joblib.load("random_forest_model.pkl")
 
 # UI
-st.title("Term Deposit Subscription Predictor")
+st.title("Subscription Predictor")
 
 # User input
 st.header("Client Info")
